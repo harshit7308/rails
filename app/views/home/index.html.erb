@@ -1,0 +1,119 @@
+<aside id="colorlib-hero">
+    <div class="flexslider">
+      <ul class="slides">
+        <li style="background-image: url(<%= image_path('img_bg_1.jpg') %>);">
+          <div class="overlay"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                <div class="slider-text-inner">
+                  <div class="desc">
+                    <h1 class="head-1">WELCOME</h1>
+                    <h2 class="head-2">TO</h2>
+                    <h2 class="head-3">Shoes</h2>
+                    <p class="category"><span>World</span></p>
+                    <p><a href="#"class="btn btn-primary">Shop Collection</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(<%= image_path('img_bg_2.jpg') %>);">
+          <div class="overlay"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                <div class="slider-text-inner">
+                  <div class="desc">
+                    <h1 class="head-1">Huge</h1>
+                    <h2 class="head-2">Sale</h2>
+                    <h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
+                    <p class="category"><span>Big sale sandals</span></p>
+                    <p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(<%= image_path('img_bg_3.jpg') %>);">
+          <div class="overlay"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                <div class="slider-text-inner">
+                  <div class="desc">
+                    <h1 class="head-1">New</h1>
+                    <h2 class="head-2">Arrival</h2>
+                    <h2 class="head-3">up to <strong class="font-weight-bold">30%</strong> off</h2>
+                    <p class="category"><span>New stylish shoes for men</span></p>
+                    <p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+  </aside>
+
+
+<div class="colorlib-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 class="intro">It started with a simple idea: Create quality, well-designed products that I wanted myself.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="colorlib-product">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <div class="featured">
+          <div class="featured-img" style="background-image: url(<%= image_path('men.jpg') %>);"></div>
+            <div class="desc">
+              <h2><%= link_to "Shop Men's Collection", search_index_path(suitable: 'men',name: params[:name]) %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div class="featured">
+         <div class="featured-img" style="background-image: url(<%= image_path('women.jpg') %>);"></div>
+            <div class="desc">
+              <h2><%= link_to "Shop Women's Collection", search_index_path(suitable: 'women',name: params[:name]) %></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="colorlib-partner">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+      <h2>Trusted Partners</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col partner-col text-center">
+      	<%= image_tag "brand-1.jpg",:class => 'img-fluid' %>
+    </div>
+    <div class="col partner-col text-center">
+      <%= image_tag "brand-2.jpg",:class => 'img-fluid' %>
+    </div>
+    <div class="col partner-col text-center">
+      <%= image_tag "brand-3.jpg",:class => 'img-fluid' %>
+    </div>
+    <div class="col partner-col text-center">
+      <%= image_tag "brand-4.jpg",:class => 'img-fluid' %>
+    </div>
+    <div class="col partner-col text-center">
+      <%= image_tag "brand-5.jpg",:class => 'img-fluid' %>
+    </div>
+  </div>
+</div>
+</div>

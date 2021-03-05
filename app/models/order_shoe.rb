@@ -1,0 +1,2 @@
+class OrderShoe < ApplicationRecord
+end

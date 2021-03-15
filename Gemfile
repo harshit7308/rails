@@ -62,3 +62,4 @@ gem 'sidekiq'
 gem 'resque'
 gem 'delayed_job_active_record'
 gem 'resque-scheduler'
+gem "haml-rails", "~> 2.0"

@@ -8,7 +8,7 @@
         <div class="col-sm-5 col-md-3">
              <div class="form-group">
                <%= form_with url: search_index_path,  class: 'search-wrap navbar-form navbar-left', local: true, method: :get do |form| %>
-               <%= text_field_tag(:name, params[:name] ,class: "form-control search",placeholder: 'search')%>
+               <%= text_field_tag(:name, params[:name] ,class: "form-control search",placeholder:t('menu.Search'))%>
                <%= hidden_field_tag(:suitable, params[:suitable] ,class: "form-control search")%>
                <button  class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
                <% end %>
@@ -19,31 +19,40 @@
         <div class="col-sm-12 text-left menu-1">
           <ul>
             <li class=" has-dropdown active">
-              <%= link_to "Home", root_path%>
+              <%= link_to t('menu.home'), root_path %>
               <ul class="dropdown">
-                <li><%= link_to "Shopping cart", carts_path%></li>
-                <li><%= link_to "Order complete", orders_path%></li>
+                <li><%= link_to t('menu.Shopping cart'), carts_path %></li>
+                <li><%= link_to t('menu.Order complete'), orders_path %></li>
                 <li>
                   <% if current_user %>
-                      <%= link_to "Checkout", checkout_path%>
+                      <%= link_to t('menu.Checkout'), checkout_path %>
                   <% else %>
-                    <%= link_to "Checkout", new_user_session_path %>
+                    <%= link_to t('menu.Checkout'), new_user_session_path %>
                   <% end %>
                 </li>
               </ul>
             </li>
-            <li><%= link_to "men", search_index_path(suitable: 'men',name: params[:name]) %></li>
-            <li><%= link_to "Women", search_index_path(suitable: 'women',name: params[:name])%></li>
-            <li><%= link_to "About", about_path%></li>
-            <li><%= link_to "Contact",contact_path%></li>
+            <li><%= link_to  t('menu.Men'), search_index_path(suitable: 'men',name: params[:name]) %></li>
+            <li><%= link_to  t('menu.Women'), search_index_path(suitable: 'women',name: params[:name])%></li>
+            <li><%= link_to  t('menu.About'), about_path%></li>
+            <li><%= link_to t('menu.Contact'),contact_path%></li>
             <li>
               <% if current_user %>
-                <%= link_to 'LogOut', destroy_user_session_path, method: :delete %>
+                <%= link_to t('menu.LogOut'), destroy_user_session_path, method: :delete %>
               <% else %>
-                <%= link_to "Login", new_user_session_path %>
+                <%= link_to t('menu.Login'), new_user_session_path %>
               <% end %>
             </li>
-            <li class="cart"><i class="icon-shopping-cart"></i><%= link_to "Cart[0]", carts_path%></li>
+            <li class="cart"><i class="icon-shopping-cart"></i><%= link_to t('menu.Cart'), carts_path%></li>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  language
+                </button>
+                  <div class="dropdown-menu">
+                    <li><%= link_to 'Gujarati',locale: "gu"%></li>
+                    <li><%= link_to 'English',locale: "en" %></li>
+                  </div>
+              </div>
           </ul>
         </div>
       </div>

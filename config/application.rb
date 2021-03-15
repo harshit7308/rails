@@ -17,5 +17,10 @@ module Project
     # the framework and any gems in your application.
 
     config.active_job.queue_adapter = :sidekiq
+    # Permitted locales available for the application
+    I18n.available_locales = [:en, :gu]
+
+    # Set default locale to something other than :en
+    #I18n.default_locale = :gu
   end
 end

@@ -3,6 +3,6 @@
 
 require_relative 'config/application'
 require 'resque/tasks'
-require 'resque_scheduler/tasks'
+# require 'resque_scheduler/tasks'
 
 Rails.application.load_tasks

@@ -1,17 +1,16 @@
 class SearchController < ApplicationController
   def index
 
-    @shoes=Shoe.all
+
+    @shoes = Shoe.all
+
     @shoes = Shoe.page(params[:page]).per(4)
 
-
-    @shoes.where("name LIKE ? ", "%#{params[:name]}%") if params[:name].present?
-
-
+    @shoes = @shoes.where("name LIKE ? ", "%#{params[:name]}%") if params[:name].present?
 
     @shoes = if params[:price] == 'DESC'
          @shoes.order(price: :desc)
-     elsif params[:price] == 'ASC'
+      elsif params[:price] == 'ASC'
           @shoes.order(price: :asc)
       else
         @shoes.order(created_at: :desc)
@@ -21,6 +20,7 @@ class SearchController < ApplicationController
       )if params[:suitable].present?
 
       @shoes = @shoes.where(brand: params[:brand])if params[:brand].present?
+
 
 
 

@@ -1,0 +1,25 @@
+gu:
+  menu:
+    home: 'ઘર'
+    Shopping cart: 'શોપિંગ કાર્ટ'
+    Order complete: 'ઓર્ડર પૂર્ણ'
+    Checkout: 'ચેકઆઉટ'
+    Men: 'પુરુષો'
+    Women: 'સ્ત્રીઓ'
+    About: 'વિશે'
+    Contact: 'સંપર્ક કરો'
+    LogOut: 'લૉગ આઉટ'
+    Login: 'લોગીન'
+    Cart: 'કાર્ટ'
+    Search: 'શોધો'
+
+
+  login:
+    sign_in: 'સાઇન_ઇન'
+    remember_me: 'યાદરાખો'
+    email: 'ઇમેઇલ'
+    Password: 'પાસવર્ડ'
+    new_password: 'નવો પાસવર્ડ'
+    confirm_new_password: 'નવાપાસવર્ડની પુષ્ટી કરો'
+    password_confirmation: 'પાસવર્ડ ખાતરી'
+    current_password : 'અત્યારનો પાસવર્ડ'

@@ -9,6 +9,7 @@ class HomeController < ApplicationController
   end
 
   def checkout
+    before_action :authenticate_user!
   end
 
 

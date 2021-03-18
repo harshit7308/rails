@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'show/show'
   resources :search
   resources :home
-  resources :carts, only: [:index ,:create ,:delete]
+  resources :carts
   resources :orders, only: [:index,:create ,:delete]
 
 

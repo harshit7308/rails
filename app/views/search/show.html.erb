@@ -41,7 +41,7 @@
   									<i class="icon-star-half"></i>
   									(74 Rating)
   								</span>
-  							</p>
+
                 <div class="size-wrap">
 								  <div class="block-26 mb-2">
 									  <h4>Size</h4>
@@ -79,13 +79,17 @@
                   	</div>
                   	<div class="row">
 	                  	<div class="col-sm-12 text-center">
-									<p class="addtocart"><a href="<%= carts_path %>" class="btn btn-primary btn-addtocart"><i class="icon-shopping-cart"></i> Add to Cart</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
+                        <div class="form-group">
+                          <%= form_with url: cart_path, class: '', local: true, method: :get do |form| %>
+                          <%= hidden_field_tag(:user, params[:current_user] ,class: "form-control search")%>
+                          	<p class="addtocart"><a href="<%= cart_path %>" class="btn btn-primary btn-addtocart"><i class="icon-shopping-cart"></i> Add to Cart</a></p>
+                          <% end %>
+                        </div>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
 
 				<div class="row">
 					<div class="col-sm-12">

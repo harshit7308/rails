@@ -19,3 +19,4 @@ production:
   database: shoes_production
   username: shoes
   password: <%= ENV['MYSQL_DEMO_DATABASE_PASSWORD'] %>
+  adapter: postgresql

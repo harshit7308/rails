@@ -1,9 +1,9 @@
 default: &default
-  adapter: pg
+  adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: root
-
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -18,4 +18,4 @@ production:
   database: shoes_production
   username: shoes
   password: <%= ENV['MYSQL_DEMO_DATABASE_PASSWORD'] %>
-  adapter: mysql
+  adapter: postgresql

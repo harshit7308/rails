@@ -6,7 +6,7 @@ ruby '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use mysql as the database for Active Record
-gem 'mysql2', group: :development
+
 gem 'pg', '0.18.1', group: :production
  gem 'rails_12factor', group: :production
 
@@ -42,6 +42,7 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
+  gem 'mysql2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -65,7 +66,5 @@ gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'kaminari'
 gem 'sidekiq'
-gem 'resque'
-gem 'delayed_job_active_record'
 gem 'resque-scheduler'
 gem "haml-rails", "~> 2.0"

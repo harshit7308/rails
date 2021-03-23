@@ -10,3 +10,4 @@
 //= require bootstrap-datepicker
 //= require jquery.stellar.min
 //= require main
+//= require jquery-ujs

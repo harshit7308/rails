@@ -1,2 +1,3 @@
 class ShoesController < ApplicationController
+
 end

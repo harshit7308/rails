@@ -60,7 +60,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #To enable variants
-gem 'mini_magick'
+gem 'mini_magick' 
 gem 'image_processing'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'

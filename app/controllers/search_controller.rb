@@ -4,7 +4,6 @@ class SearchController < ApplicationController
 
     @shoes = Shoe.all
 
-    @shoes = Shoe.page(params[:page]).per(4)
 
     @shoes = @shoes.where("name LIKE ? ", "%#{params[:name]}%") if params[:name].present?
 

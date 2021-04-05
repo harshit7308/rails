@@ -5,7 +5,7 @@ ActiveAdmin.register Shoe do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :description, :category_id, :brand_id, :color_id, :size, :price, :discount_type, :discount, :suitable, :material
+   permit_params :name, :description, :category_id, :brand_id, :color_id, :size, :price, :discount_type, :discount, :suitable, :material
   #
   # or
   #
@@ -14,5 +14,5 @@ ActiveAdmin.register Shoe do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  
+
 end

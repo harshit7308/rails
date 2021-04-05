@@ -16,6 +16,5 @@ test:
 
 production:
   <<: *default
-  database: shoes_production
-  username: postgres
-  password: root
+  database: shoes
+  

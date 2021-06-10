@@ -77,16 +77,7 @@
                          </button>
                      	</span>
                   	</div>
-                  	<div class="row">
-	                  	<div class="col-sm-12 text-center">
-                        <div class="form-group">
-                          <%= form_with url: cart_path, class: '', local: true, method: :get do |form| %>
-                          <%= hidden_field_tag(:user, params[:current_user] ,class: "form-control search")%>
-                          	<p class="addtocart"><a href="<%= cart_path %>" class="btn btn-primary btn-addtocart"><i class="icon-shopping-cart"></i> Add to Cart</a></p>
-                          <% end %>
-                        </div>
-    								</div>
-    							</div>
+
     						</div>
     					</div>
     				</div>

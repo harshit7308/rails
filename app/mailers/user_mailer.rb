@@ -5,4 +5,3 @@ class UserMailer < ApplicationMailer
     mail(to: @user.email, subject: 'Welcome To FashionFeets.com')
   end
 end
-  

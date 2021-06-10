@@ -46,6 +46,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rubocop', require: false
+  gem 'kaminari'
 end
 
 group :test do
@@ -60,11 +62,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #To enable variants
-gem 'mini_magick' 
+gem 'mini_magick'
 gem 'image_processing'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
-gem 'kaminari'
 gem 'sidekiq'
 gem 'resque-scheduler'
 gem "haml-rails", "~> 2.0"

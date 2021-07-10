@@ -10,7 +10,4 @@ before_action :authenticate_user!
   end
   def delete
   end
-
-  def create
-  end
 end
